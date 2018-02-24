@@ -1,14 +1,16 @@
 <?php
-
+//Data Sanitize
 function sanitizeFormPassword($inputText) {
 	$inputText = strip_tags($inputText);
 	return $inputText;
+  //Removes Non-String Content
 }
 
 function sanitizeFormUsername($inputText) {
 	$inputText = strip_tags($inputText);
 	$inputText = str_replace(" ", "", $inputText);
 	return $inputText;
+  //Removes Non-String Content and Spaces
 }
 
 function sanitizeFormString($inputText) {
@@ -16,11 +18,12 @@ function sanitizeFormString($inputText) {
 	$inputText = str_replace(" ", "", $inputText);
 	$inputText = ucfirst(strtolower($inputText));
 	return $inputText;
+  //Removes Non-String Content, Spaces, Upcase first letter of string
 }
 
-
+//Register button was pressed
 if(isset($_POST['registerButton'])) {
-	//Register button was pressed
+  //variables match html name field
 	$username = sanitizeFormUsername($_POST['username']);
 	$firstName = sanitizeFormString($_POST['firstName']);
 	$lastName = sanitizeFormString($_POST['lastName']);
