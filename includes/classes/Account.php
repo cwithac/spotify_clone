@@ -52,7 +52,18 @@
       }
 
       private function validatePasswords($password, $passwordconfirm) {
-
+        if($password != $passwordconfirm) {
+          array_push($this->errorArray, 'Your passwords do not match.');
+          return;
+        }
+        if(preg_match('/[^A-Za-z0-9]/', $password)) {
+          array_push($this->errorArray, 'Your password can only contain letters and numbers.');
+          return;
+        }
+        if(strlen($password) > 30 || strlen($password) < 5) {
+          array_push($this->errorArray, 'Your password must be between 5 and 30 characters.');
+          return;
+        }
       }
 
   }
