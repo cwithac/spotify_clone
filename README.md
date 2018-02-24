@@ -10,4 +10,5 @@ _Modeled after 'Create a Spotify Clone from Scratch' via Udemy_
 - JavaScript
 - MySQL
 - XAMPP
+- MD5 Encryption
 ```
