@@ -1,8 +1,12 @@
 <?php
   //Include external files
+  include('includes/classes/Account.php');
+
+  $account = new Account();
+  $account->register();
+
   include('includes/handlers/registerhandler.php');
   include('includes/handlers/loginhandler.php');
-
 ?>
 
 <html>

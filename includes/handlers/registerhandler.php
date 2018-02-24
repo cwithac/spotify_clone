@@ -19,27 +19,6 @@ function sanitizeFormString($inputText) {
   return $inputText;
 }
 
-//Data Validation Functions
-function validateUsername($username) {
-
-}
-
-function validateFirstName($firstName) {
-
-}
-
-function validateLastName($lastName) {
-
-}
-
-function validateEmails($email, $emailconfirm) {
-
-}
-
-function validatePasswords($password, $passwordconfirm) {
-
-}
-
 // Register Button Pressed
 if(isset($_POST['registerButton'])) {
   $registerUsername = sanitizeFormUsername($_POST['registerUsername']); //Set Variable, Run Sanitize Function
@@ -49,12 +28,6 @@ if(isset($_POST['registerButton'])) {
   $registerEmailConfirm = sanitizeFormString($_POST['$registerEmailConfirm']); //Set Variable, Run Sanitize Function (String)
   $registerPassword = sanitizeFormPassword($_POST['$registerPassword']); //Set Variable, Run Sanitize Function (PW)
   $registerPasswordConfirm = sanitizeFormPassword($_POST['$registerPasswordConfirm']); //Set Variable, Run Sanitize Function (PW)
-
-  validateUsername($registerUsername);
-  validateFirstName($registerFirstName);
-  validateLastName($registerLastName);
-  validateEmails($registerEmail, $registerEmailConfirm);
-  validatePasswords($password, $passwordconfirm);
 }
 
 ?>
