@@ -14,6 +14,13 @@
         $this->validateLastName($registerLastName);
         $this->validateEmails($registerEmail, $registerEmailConfirm);
         $this->validatePasswords($password, $passwordconfirm);
+
+        if(empty($this->errorArray)) {
+          //No errors, insert into Database
+          return true;
+        } else {
+          return false;
+        }
       }
 
       //Data Validation Functions
