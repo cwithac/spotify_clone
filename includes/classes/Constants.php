@@ -1,7 +1,7 @@
 <?php
 
   class Constants {
-
+    //Register
       public static $passwordsDoNoMatch = "Passwords do not match.";
       public static $passwordNotAlphanumeric = "Password can only contain numbers and letters.";
       public static $passwordCharacters = "Password must be between 5 and 30 characters.";
@@ -17,6 +17,8 @@
       public static $usernameCharacters = "Your username must be between 5 and 25 characters.";
       public static $usernameTaken = "This username already exists.";
 
+    //Login
+    public static $loginFailed = "Username or password is incorrect.";
   }
 
  ?>
