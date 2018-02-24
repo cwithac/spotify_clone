@@ -55,6 +55,7 @@ html, body {
   font-size: 13px;
   margin-top: 15px;
   color: #111;
+  display: block;
 }
 
 #inputContainer button {
@@ -124,4 +125,10 @@ textarea:focus, input:focus {
   list-style-type: none;
   padding: 5px 30px;
   background: url(../images/icons/icons8-musical_notes.png) no-repeat 0 0;
+}
+
+#inputContainer .errorMessage {
+  color: #07d159;
+  font-size: 12px;
+  display: block;
 }
