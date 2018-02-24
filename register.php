@@ -110,8 +110,16 @@
           </div>
      		</form>
      	</div>
+      <div id="loginText">
+        <h1>Get great music, right now</h1>
+        <h2>Listen to thousands of songs for free.</h2>
+        <ul>
+          <li>Discover music you'll fall in love with</li>
+          <li>Create your own playlists</li>
+          <li>Follow artists to keep up to date</li>
+        </ul>
+      </div>
     </div>
-
   </div>
 </body>
 </html>
