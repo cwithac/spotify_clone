@@ -7,6 +7,13 @@
 
 	include("includes/handlers/registerhandler.php");
 	include("includes/handlers/loginhandler.php");
+
+  //Value Remain Upon Submission
+  function getInputValue($name) {
+    if(isset($_POST[$name])) {
+      echo $_POST[$name];
+    }
+  }
 ?>
 
 <html>
@@ -34,23 +41,23 @@
 			<p>
 				<?php echo $account->getError(Constants::$usernameCharacters); ?>
 				<label for="username">Username</label>
-				<input id="username" name="username" type="text" required>
+				<input id="username" name="username" type="text" value="<?php getInputValue('username') ?>" required>
 			</p>
 			<p>
 				<?php echo $account->getError(Constants::$firstNameCharacters); ?>
 				<label for="firstName">First Name</label>
-				<input id="firstName" name="firstName" type="text" required>
+				<input id="firstName" name="firstName" type="text" value="<?php getInputValue('firstName') ?>" required>
 			</p>
 			<p>
 				<?php echo $account->getError(Constants::$lastNameCharacters); ?>
 				<label for="lastName">Last Name</label>
-				<input id="lastName" name="lastName" type="text" required>
+				<input id="lastName" name="lastName" type="text" value="<?php getInputValue('lastName') ?>"required>
 			</p>
 			<p>
 				<?php echo $account->getError(Constants::$emailDoNotMatch); ?>
 				<?php echo $account->getError(Constants::$emailInvalid); ?>
 				<label for="email">E-Mail</label>
-				<input id="email" name="email" type="email" required>
+				<input id="email" name="email" type="email" value="<?php getInputValue('email') ?>"required>
 			</p>
 			<p>
 				<label for="email2">Confirm E-Mail</label>
