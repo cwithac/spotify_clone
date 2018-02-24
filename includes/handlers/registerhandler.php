@@ -28,6 +28,8 @@ if(isset($_POST['registerButton'])) {
   $registerEmailConfirm = sanitizeFormString($_POST['$registerEmailConfirm']); //Set Variable, Run Sanitize Function (String)
   $registerPassword = sanitizeFormPassword($_POST['$registerPassword']); //Set Variable, Run Sanitize Function (PW)
   $registerPasswordConfirm = sanitizeFormPassword($_POST['$registerPasswordConfirm']); //Set Variable, Run Sanitize Function (PW)
+
+  $account->register($registerUsername, $registerFirstName, $registerLastName, $registerEmail, $registerEmailConfirm, $registerPassword, $registerPasswordConfirm);
 }
 
 ?>

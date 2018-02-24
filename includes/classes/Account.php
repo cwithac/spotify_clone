@@ -2,11 +2,13 @@
 
   class Account {
 
-      public function __construct() {
+      private $errorArray;
 
+      public function __construct() {
+        $this->errorArray = array();
       }
 
-      public function register() {
+      public function register($registerUsername, $registerFirstName, $registerLastName, $registerEmail, $registerEmailConfirm, $password, $passwordconfirm) {
         $this->validateUsername($registerUsername);
         $this->validateFirstName($registerFirstName);
         $this->validateLastName($registerLastName);
@@ -16,7 +18,11 @@
 
       //Data Validation Functions
       private function validateUsername($username) {
-
+        if(strlen($username) > 25 || strlen($username) < 5) {
+          array_push($this->errorArray, 'Your username must be between 5 and 25 characters.');
+          return;
+        }
+        //TOOD: Check against user table for username.
       }
 
       private function validateFirstName($firstName) {
