@@ -24,8 +24,26 @@
 	<title>Welcome to Slotify!</title>
   <link rel="stylesheet" href="assets/css/register.css">
   <link href="data:image/x-icon;base64,AAABAAEAEBAQAAEABAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD//wAAh/8AAAfjAAAHwwAAh8MAAOfjAADn+wAA5/sAAOf7AADn+wAA5/sAAOf7AADn+wAA4AMAAOADAAD//wAA" rel="icon" type="image/x-icon" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="assets/js/register.js" charset="utf-8"></script>
 </head>
 <body>
+
+  <?php
+
+  if(isset($_POST['registerButton'])) {
+    echo "<script>$(document).ready(function(){
+        $('#loginForm').hide();
+        $('#registerForm').show();
+    });</script>";
+  } else {
+    echo "<script>$(document).ready(function(){
+        $('#loginForm').show();
+    });</script>";
+  }
+
+   ?>
+
   <div id="background">
     <div id="loginContainer">
       <div id="inputContainer">

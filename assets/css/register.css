@@ -72,6 +72,7 @@ html, body {
 #inputContainer button:hover {
   cursor: pointer;
   border: 2px solid #FFF;
+  background-color: rgba(255,255,255,.2);
 }
 
 textarea:focus, input:focus {
@@ -82,7 +83,19 @@ textarea:focus, input:focus {
   text-align: center;
 }
 
+.hasAccountText:hover {
+  cursor: pointer;
+}
+
 .hasAccountText span {
   font-weight: bold;
   font-size: 12px;
+}
+
+#hideLogin:hover, #hideRegister:hover {
+  color: #333;
+}
+
+#registerForm, #loginForm {
+  display: none;
 }
