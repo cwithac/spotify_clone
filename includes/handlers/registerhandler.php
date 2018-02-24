@@ -1,39 +1,41 @@
 <?php
 
-//Data Sanitize Functions
-function sanitizeFormUsername($inputText) {
-  $inputText = strip_tags($inputText); //Removes Non-String
-  $inputText = str_replace(" ", "", $inputText); //Removes Spaces
-  return $inputText;
+function sanitizeFormPassword($inputText) {
+	$inputText = strip_tags($inputText);
+	return $inputText;
 }
 
-function sanitizeFormPassword($inputText) {
-  $inputText = strip_tags($inputText); //Removes Non-String
-  return $inputText;
+function sanitizeFormUsername($inputText) {
+	$inputText = strip_tags($inputText);
+	$inputText = str_replace(" ", "", $inputText);
+	return $inputText;
 }
 
 function sanitizeFormString($inputText) {
-  $inputText = strip_tags($inputText); //Removes Non-String
-  $inputText = str_replace(" ", "", $inputText); //Removes Spaces
-  $inputText = ucfirst(strtolower($inputText)); //Upcase first character
-  return $inputText;
+	$inputText = strip_tags($inputText);
+	$inputText = str_replace(" ", "", $inputText);
+	$inputText = ucfirst(strtolower($inputText));
+	return $inputText;
 }
 
-// Register Button Pressed
+
 if(isset($_POST['registerButton'])) {
-  $registerUsername = sanitizeFormUsername($_POST['registerUsername']); //Set Variable, Run Sanitize Function
-  $registerFirstName = sanitizeFormString($_POST['registerFirstName']); //Set Variable, Run Sanitize Function (String)
-  $registerLastName = sanitizeFormString($_POST['$registerLastName']); //Set Variable, Run Sanitize Function (String)
-  $registerEmail = sanitizeFormString($_POST['$registerEmail']); //Set Variable, Run Sanitize Function (String)
-  $registerEmailConfirm = sanitizeFormString($_POST['$registerEmailConfirm']); //Set Variable, Run Sanitize Function (String)
-  $registerPassword = sanitizeFormPassword($_POST['$registerPassword']); //Set Variable, Run Sanitize Function (PW)
-  $registerPasswordConfirm = sanitizeFormPassword($_POST['$registerPasswordConfirm']); //Set Variable, Run Sanitize Function (PW)
+	//Register button was pressed
+	$username = sanitizeFormUsername($_POST['username']);
+	$firstName = sanitizeFormString($_POST['firstName']);
+	$lastName = sanitizeFormString($_POST['lastName']);
+	$email = sanitizeFormString($_POST['email']);
+	$email2 = sanitizeFormString($_POST['email2']);
+	$password = sanitizeFormPassword($_POST['password']);
+	$password2 = sanitizeFormPassword($_POST['password2']);
 
-  $wasSuccessful = $account->register($registerUsername, $registerFirstName, $registerLastName, $registerEmail, $registerEmailConfirm, $registerPassword, $registerPasswordConfirm);
+	$wasSuccessful = $account->register($username, $firstName, $lastName, $email, $email2, $password, $password2);
 
-  if($wasSuccessful) {
-    header('Location: index.php');
-  }
+	if($wasSuccessful == true) {
+		header("Location: index.php");
+	}
+
 }
+
 
 ?>
