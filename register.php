@@ -43,6 +43,7 @@
 			<h2>Register</h2>
 			<p>
 				<?php echo $account->getError(Constants::$usernameCharacters); ?>
+        <?php echo $account->getError(Constants::$usernameTaken); ?>
 				<label for="username">Username</label>
 				<input id="username" name="username" type="text" value="<?php getInputValue('username') ?>" required>
 			</p>
@@ -59,6 +60,7 @@
 			<p>
 				<?php echo $account->getError(Constants::$emailDoNotMatch); ?>
 				<?php echo $account->getError(Constants::$emailInvalid); ?>
+        <?php echo $account->getError(Constants::$emailTaken); ?>
 				<label for="email">E-Mail</label>
 				<input id="email" name="email" type="email" value="<?php getInputValue('email') ?>"required>
 			</p>
