@@ -32,7 +32,7 @@
             </a>
             <div class="group">
               <div class="navItem">
-                <a href="search.php" class="navItemLink">Search</a>
+                <a href="search.php" class="navItemLink">Search<img src="assets/images/icons/search.png" alt="Search" class="icon"></a>
               </div>
             </div>
             <div class="group">

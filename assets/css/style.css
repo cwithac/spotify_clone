@@ -165,6 +165,7 @@ html, body {
 
 .navBar .logo img {
   width: 32px;
+  margin-bottom: 15px;
 }
 
 .navBar .group {
@@ -173,9 +174,28 @@ html, body {
 }
 
 .navBar .group .navItem {
-  padding: 7px;
-  font-size: 16px;
+  padding: 10px 0;
+  font-size: 14px;
   font-weight: 700;
   display: block;
   letter-spacing: 1px;
+  position: relative;
+}
+
+.navBar .navItemLink {
+  color: #A0A0A0;
+  text-decoration: none;
+  transition: .3s;
+}
+
+.navBar .navItemLink:hover {
+  color: #FFFFFF;
+  cursor: pointer;
+}
+
+.navBar .icon {
+  position: absolute;
+  right: 0;
+  top: 6;
+  width: 25px;
 }
