@@ -14,3 +14,5 @@ _Modeled after 'Create a Spotify Clone from Scratch' via Udemy_
 ```
 
 [Icons download from Icons8](https://icons8.com/material-icons)
+
+![](https://i.imgur.com/8thZHmj.jpg)
