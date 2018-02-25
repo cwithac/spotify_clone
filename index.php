@@ -9,10 +9,12 @@
           while($row = mysqli_fetch_array($albumQuery)) {
             echo "
             <div class='gridViewItem'>
+            <a href='album.php?id=" . $row['id'] . "'>
               <img src='" . $row['artworkPath'] . "'>
               <div class='gridViewInfo'>"
                 . $row['title'] .
               "</div>
+              </a>
             </div>
             ";
           }
