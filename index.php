@@ -29,6 +29,14 @@
             <span class="albumLink">
               <img class="albumArtwork" src="https://i.imgur.com/qG34kGH.png" alt="">
             </span>
+            <div class="trackInfo">
+              <span class="trackName">
+                <span>Twinkle Twinkle</span>
+              </span>
+              <span class="artistName">
+                <span>Cathleen Wright</span>
+              </span>
+            </div>
           </div>
         </div>
         <div id="nowPlayingCenter">
