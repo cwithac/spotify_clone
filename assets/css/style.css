@@ -166,3 +166,16 @@ html, body {
 .navBar .logo img {
   width: 32px;
 }
+
+.navBar .group {
+  border-top: 1px solid #A0A0A0;
+  padding: 10px 0;
+}
+
+.navBar .group .navItem {
+  padding: 7px;
+  font-size: 16px;
+  font-weight: 700;
+  display: block;
+  letter-spacing: 1px;
+}
