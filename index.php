@@ -25,6 +25,7 @@
     <div id="mainContainer">
       <div id="topContainer">
         <?php include('includes/navBarContainer.php'); ?>
+        <?php include('includes/mainViewContainer.php'); ?>
       </div>
       <?php include('includes/nowPlayingBarContainer.php'); ?>
     </div>
