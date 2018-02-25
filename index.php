@@ -25,7 +25,11 @@
     <div id="nowPlayingBarContainer">
       <div id="nowPlayingBar">
         <div id="nowPlayingLeft">
-
+          <div class="content">
+            <span class="albumLink">
+              <img class="albumArtwork" src="https://i.imgur.com/qG34kGH.png" alt="">
+            </span>
+          </div>
         </div>
         <div id="nowPlayingCenter">
           <div class="content playerControls">
@@ -36,6 +40,13 @@
               <button class="controlButton pause" style="display: none;"><img src="assets/images/icons/pause.png" title="Pause" alt="Pause"></button>
               <button class="controlButton next"><img src="assets/images/icons/next.png" title="Next" alt="Next"></button>
               <button class="controlButton repeat"><img src="assets/images/icons/repeat.png" title="Repeat" alt="Repeat"></button>
+            </div>
+            <div class="playbackBar">
+              <span class="progressTime current">0:00</span>
+              <div class="progressBar">
+                <div class="progressBarBg"><div class="progress"></div></div>
+              </div>
+              <span class="progressTime remaining">0:00</span>
             </div>
           </div>
         </div>

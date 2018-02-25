@@ -34,6 +34,7 @@ html, body {
 
 #nowPlayingBar .content {
   width: 100%;
+  height: 57px;
 }
 
 .playerControls .buttons {
@@ -60,4 +61,48 @@ html, body {
 
 .controlButton:hover {
 	cursor: pointer;
+}
+
+.playbackBar {
+  display: flex;
+}
+
+.progressTime {
+  color: #A0A0A0;
+  font-size: 11px;
+  min-width: 40px;
+  text-align: center;
+}
+
+.progressBar {
+  width: 100%;
+  height: 12px;
+  display: inline-flex;
+  cursor: pointer;
+}
+
+.progressBarBg {
+  background-color: #404040;
+  height: 4px;
+  width: 100%;
+  border-radius: 2px;
+}
+
+.progress {
+  background-color: #A0A0A0;
+  height: 4px;
+  width: 0;
+  border-radius: 2px;
+}
+
+.playbackBar .progressBar {
+  margin-top: 5px;
+}
+
+#nowPlayingLeft .albumArtwork {
+  height: 100%;
+  max-width: 57px;
+  margin-right: 15px;
+  float: left;
+  background-size: cover;
 }

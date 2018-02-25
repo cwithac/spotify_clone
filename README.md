@@ -13,6 +13,7 @@ _Modeled after 'Create a Spotify Clone from Scratch' via Udemy_
 - MD5 Encryption
 ```
 
-[Icons download from Icons8](https://icons8.com/material-icons)
+- [Icons download from Icons8](https://icons8.com/material-icons)
+- [Images download from Pixabay](pixabay.com/)
 
 ![](https://i.imgur.com/8thZHmj.jpg)
