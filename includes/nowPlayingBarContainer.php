@@ -31,6 +31,14 @@ $jsonArray = json_encode($resultArray);
      }
    }
 
+   function playSong() {
+     audioElement.play();
+   }
+
+   function pauseSong() {
+     audioElement.pause();
+   }
+
  </script>
 
 <div id="nowPlayingBarContainer">
@@ -55,8 +63,8 @@ $jsonArray = json_encode($resultArray);
         <div class="buttons">
           <button class="controlButton shuffle"><img src="assets/images/icons/shuffle.png" title="Shuffle" alt="Shuffle"></button>
           <button class="controlButton previous"><img src="assets/images/icons/previous.png" title="Previous" alt="Previous"></button>
-          <button class="controlButton play"><img src="assets/images/icons/play-filled.png" title="Play" alt="Play"></button>
-          <button class="controlButton pause" style="display: none;"><img src="assets/images/icons/pause.png" title="Pause" alt="Pause"></button>
+          <button class="controlButton play" onclick="playSong()"><img src="assets/images/icons/play-filled.png" title="Play" alt="Play"></button>
+          <button class="controlButton pause" onclick="pauseSong()" style="display: none;"><img src="assets/images/icons/pause.png" title="Pause" alt="Pause"></button>
           <button class="controlButton next"><img src="assets/images/icons/next.png" title="Next" alt="Next"></button>
           <button class="controlButton repeat"><img src="assets/images/icons/repeat.png" title="Repeat" alt="Repeat"></button>
         </div>
