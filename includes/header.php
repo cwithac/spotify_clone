@@ -1,6 +1,7 @@
 <?php
   //Require Session/Active Login for page
   include('includes/config.php');
+  include('includes/classes/Artist.php');
 
 //TEMPORARY SESSION DEACTIVATE
   // session_destroy();
