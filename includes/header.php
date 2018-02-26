@@ -22,6 +22,7 @@
     <meta charset="utf-8">
     <title>Slotify</title>
     <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/js/script.js" charset="utf-8"></script>
   </head>
   <body>
 
