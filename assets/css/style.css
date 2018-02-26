@@ -247,3 +247,35 @@ body {
   white-space: nowrap;
   letter-spacing: 1px;
 }
+
+#mainContent .entityInfo {
+  padding: 40px 0 10px 0;
+  display: inline-block;
+  width: 100%;
+}
+
+#mainContent .entityInfo .leftSection {
+  width: 30%;
+  float: left;
+  max-width: 250px;
+}
+
+#mainContent .entityInfo .leftSection img {
+  width: 100%;
+}
+
+#mainContent .entityInfo .rightSection {
+  width: 70%;
+  float: left;
+  padding: 5px 10px 5px 40px;
+  box-sizing: border-box;
+}
+
+#mainContent .entityInfo h2 {
+  margin-top: 0px;
+}
+
+#mainContent .entityInfo .rightSection p {
+  color: #939393;
+  font-weight: 200;
+}

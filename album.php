@@ -8,11 +8,18 @@ if(isset($_GET['id'])) {
 
 $album = new Album($con, $albumId);
 $artist = $album->getArtist();
-
-echo $artist->getName();
-echo $album->getTitle();
-
 ?>
+
+<div class="entityInfo">
+  <div class="leftSection">
+    <img src="<?php echo $album->getArtworkPath(); ?>" alt="Artwork">
+  </div>
+  <div class="rightSection">
+    <h2><?php echo $album->getTitle(); ?></h2>
+    <p>By <?php echo $artist->getName(); ?></p>
+    <p><?php echo $album->getNumberOfSongs(); ?> songs</p>
+  </div>
+</div>
 
 
 
