@@ -279,3 +279,81 @@ body {
   color: #939393;
   font-weight: 200;
 }
+
+#mainContent .trackListContainer .tracklist {
+  padding: 0;
+}
+
+#mainContent .trackListContainer .tracklist .tracklistRow{
+  height: 40px;
+  padding: 15px 10px;
+  list-style: none;
+}
+
+#mainContent .trackListContainer .tracklistRow span {
+  color: #939393;
+  font-weight: 200;
+}
+
+#mainContent .trackListContainer .tracklistRow:hover {
+  background-color: #282828;
+}
+
+#mainContent .trackListContainer .tracklistRow .trackCount {
+  width: 8%;
+  float: left;
+}
+
+#mainContent .trackListContainer .tracklistRow .trackCount img {
+  width: 20px;
+  visibility: hidden;
+  position: absolute;
+  cursor: pointer;
+}
+
+#mainContent .trackListContainer .tracklistRow:hover .trackCount img {
+  visibility: visible;
+}
+
+#mainContent .trackListContainer .tracklistRow .trackCount span {
+  visibility: visible;
+}
+
+#mainContent .trackListContainer .tracklistRow:hover .trackCount span {
+  visibility: hidden;
+}
+
+#mainContent .trackListContainer .tracklistRow .trackInfo {
+  width: 75%;
+  float: left;
+}
+
+#mainContent .trackListContainer .tracklistRow .trackInfo span {
+  display: block;
+}
+
+#mainContent .trackListContainer .tracklistRow .trackInfo .trackName {
+  color: #FFF;
+  margin-bottom: 5px;
+}
+
+#mainContent .trackListContainer .tracklistRow .trackOptions {
+  width: 5%;
+  float: left;
+  text-align: right;
+}
+
+#mainContent .trackListContainer .tracklistRow .trackOptions img {
+  width: 15px;
+  visibility: hidden;
+}
+
+#mainContent .trackListContainer .tracklistRow:hover .trackOptions img {
+  visibility: visible;
+}
+
+#mainContent .trackListContainer .tracklistRow .trackDuration {
+  width: 12%;
+  float: left;
+  text-align: right;
+}
