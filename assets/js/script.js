@@ -10,4 +10,8 @@ function Audio() {
 		this.audio.src = src;
 	}
 
+  this.play = function() {
+    this.audio.play();
+  }
+
 }

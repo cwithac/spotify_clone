@@ -24,7 +24,11 @@ $jsonArray = json_encode($resultArray);
    });
 
    function setTrack(trackId, newPlaylist, play) {
+     audioElement.setTrack('assets/music/bensound-tomorrow.mp3');
 
+     if(play) {
+      // audioElement.play();
+     }
    }
 
  </script>
