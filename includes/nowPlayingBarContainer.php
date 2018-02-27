@@ -145,7 +145,7 @@ $jsonArray = json_encode($resultArray);
           <button class="controlButton previous"><img src="assets/images/icons/previous.png" title="Previous" alt="Previous"></button>
           <button class="controlButton play" onclick="playSong()"><img src="assets/images/icons/play-filled.png" title="Play" alt="Play"></button>
           <button class="controlButton pause" onclick="pauseSong()" style="display: none;"><img src="assets/images/icons/pause.png" title="Pause" alt="Pause"></button>
-          <button class="controlButton next"><img src="assets/images/icons/next.png" title="Next" alt="Next"></button>
+          <button class="controlButton next" onclick="nextSong()"><img src="assets/images/icons/next.png" title="Next" alt="Next"></button>
           <button class="controlButton repeat"><img src="assets/images/icons/repeat.png" title="Repeat" alt="Repeat"></button>
         </div>
         <div class="playbackBar">
