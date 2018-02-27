@@ -21,5 +21,5 @@
        ?>
 
   </div>
-
-<?php include('includes/footer.php'); ?>
+<!-- REMOVED TO PREVENT DUPLICATE AUDIO -->
+<!-- <?php include('includes/footer.php'); ?> -->

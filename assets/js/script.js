@@ -8,6 +8,15 @@ var repeat = false;
 var shuffle = false;
 var userLoggedIn;
 
+//Manages SPA like reload of main content
+function openPage(url) {
+	if(url.indexOf('?') == -1) {
+		url = url + '?';
+	}
+	var encodedUrl = encodeURI(url + "&userLoggedIn=" + userLoggedIn);
+	$('#mainContent').load(encodedUrl);
+}
+
 function formatTime(seconds) {
 	var time = Math.round(seconds);
 	var minutes = Math.floor(time/60);
