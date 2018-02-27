@@ -71,9 +71,20 @@ $jsonArray = json_encode($resultArray);
      audioElement.setTime(seconds);
    }
 
+   function nextSong() {
+     if(currentIndex == currentPlaylist.length - 1) {
+       currentIndex = 0;
+     } else {
+       currentIndex++;
+     }
+     var trackToPlay = currentPlaylist[currentIndex];
+     setTrack(trackToPlay, currentPlaylist, true);
+   }
+
    function setTrack(trackId, newPlaylist, play) {
 
      $.post("includes/handlers/ajax/getSongJson.php", { songId: trackId }, function(data) {
+       currentIndex = currentPlaylist.indexOf(trackId);
        var track = JSON.parse(data);
        $('.trackname span').text(track.title);
          $.post("includes/handlers/ajax/getArtistJson.php", { artistId: track.artist }, function(data) {
