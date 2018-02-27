@@ -5,7 +5,7 @@
     </span>
     <div class="group">
       <div class="navItem">
-        <span onclick="openPage('index.php')" role="link" tabindex="0" class="navItemLink">Search<img src="assets/images/icons/search.png" alt="Search" class="icon"></span>
+        <span onclick="openPage('search.php')" role="link" tabindex="0" class="navItemLink">Search<img src="assets/images/icons/search.png" alt="Search" class="icon"></span>
       </div>
     </div>
     <div class="group">
