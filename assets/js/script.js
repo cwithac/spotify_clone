@@ -1,5 +1,6 @@
 var currentPlaylist = [];
 var shufflePlaylist = [];
+var tempPlaylist = [];
 var audioElement;
 var mouseDown = false;
 var currentIndex = 0;
@@ -33,6 +34,7 @@ function updateVolumeProgressBar(audio) {
 	$('.volumeBar .progress').css('width', volume + '%');
 }
 
+//Playbar functionality, audio playing functionality
 function Audio() {
 
 	this.currentlyPlaying;

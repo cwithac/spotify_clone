@@ -9,7 +9,7 @@ if(isset($_GET['id'])) {
 $album = new Album($con, $albumId);
 $artist = $album->getArtist();
 ?>
-
+<!-- BEGIN HTML -->
 <div class="entityInfo">
   <div class="leftSection">
     <img src="<?php echo $album->getArtworkPath(); ?>" alt="Artwork">
@@ -32,7 +32,7 @@ $artist = $album->getArtist();
       echo "
         <li class='tracklistRow'>
           <div class='trackCount'>
-            <img class='play' src='assets/images/icons/play-white.png'>
+            <img class='play' src='assets/images/icons/play-white.png' onclick='setTrack(" . $albumSong->getId() . ", tempPlaylist, true)'>
             <span class='trackNumber'>$i</span>
           </div>
           <div class='trackInfo'>
@@ -51,6 +51,11 @@ $artist = $album->getArtist();
       $i++;
     }
     ?>
+    <!-- SONGS OF THE ALBUM PAGE -->
+    <script type="text/javascript">
+      var tempSongIds = "<?php echo json_encode($songIdArray); ?>";
+      tempPlaylist = JSON.parse(tempSongIds)
+    </script>
   </ul>
 </div>
 
