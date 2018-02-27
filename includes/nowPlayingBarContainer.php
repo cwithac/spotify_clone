@@ -71,6 +71,15 @@ $jsonArray = json_encode($resultArray);
      audioElement.setTime(seconds);
    }
 
+   function prevSong() {
+     if(audioElement.audio.currentTime >= 3 || currentIndex == 0) {
+       audioElement.setTime(0);
+     } else {
+       currentIndex = currentIndex - 1;
+       setTrack(currentPlaylist[currentIndex], currentPlaylist, true);
+     }
+   }
+
    function nextSong() {
      if(repeat) {
        audioElement.setTime(0);
@@ -155,7 +164,7 @@ $jsonArray = json_encode($resultArray);
       <div class="content playerControls">
         <div class="buttons">
           <button class="controlButton shuffle"><img src="assets/images/icons/shuffle.png" title="Shuffle" alt="Shuffle"></button>
-          <button class="controlButton previous"><img src="assets/images/icons/previous.png" title="Previous" alt="Previous"></button>
+          <button class="controlButton previous" onclick=prevSong()><img src="assets/images/icons/previous.png" title="Previous" alt="Previous"></button>
           <button class="controlButton play" onclick="playSong()"><img src="assets/images/icons/play-filled.png" title="Play" alt="Play"></button>
           <button class="controlButton pause" onclick="pauseSong()" style="display: none;"><img src="assets/images/icons/pause.png" title="Pause" alt="Pause"></button>
           <button class="controlButton next" onclick="nextSong()"><img src="assets/images/icons/next.png" title="Next" alt="Next"></button>
