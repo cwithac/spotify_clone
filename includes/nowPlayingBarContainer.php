@@ -46,10 +46,14 @@ $jsonArray = json_encode($resultArray);
    }
 
    function playSong() {
+     $('.controlButton.play').hide();
+     $('.controlButton.pause').show();
      audioElement.play();
    }
 
    function pauseSong() {
+     $('.controlButton.pause').hide();
+     $('.controlButton.play').show();
      audioElement.pause();
    }
 
