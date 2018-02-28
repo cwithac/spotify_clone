@@ -357,3 +357,25 @@ body {
   float: left;
   text-align: right;
 }
+
+#mainContent .artistInfo {
+  text-align: center;
+}
+
+.button {
+  color: #FFFFFF;
+  cursor: pointer;
+  margin-bottom: 10px;
+  background-color: transparent;
+  font-weight: 500;
+  letter-spacing: 2px;
+  border: 2px solid #FFFFFF;
+  border-radius: 100px;
+  padding: 15px;
+  min-width: 130px;
+}
+
+.button.green {
+  background-color: #2EBD59;
+  border-color: #2EBD59;
+}
