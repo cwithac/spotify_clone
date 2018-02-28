@@ -31,7 +31,7 @@ $('.searchInput').focus(); //Retains focus on search field, onfocus="this.value"
 </script>
 
 <div class="trackListContainer borderBottom">
-  <h2>Popular</h2>
+  <h2>Songs</h2>
   <ul class="tracklist">
     <?php
     $songsQuery = mysqli_query($con, "SELECT id FROM songs WHERE title LIKE '$term%' LIMIT 10");
