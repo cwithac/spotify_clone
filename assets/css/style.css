@@ -429,3 +429,8 @@ body {
 #mainContent .searchResultsRow:hover {
     background-color: #282828;
 }
+
+#mainContent .noResults {
+  display: block;
+  margin: 15px;
+}
