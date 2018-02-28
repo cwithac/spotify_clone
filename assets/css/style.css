@@ -389,3 +389,7 @@ body {
   text-align: center;
   text-transform: uppercase;
 }
+
+[role="link"] {
+  cursor: pointer;
+}
