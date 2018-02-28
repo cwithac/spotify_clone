@@ -385,7 +385,7 @@ body {
   margin-bottom: 20px;
 }
 
-#mainContent .trackListContainer h2, #mainContent .gridViewContainer h2 {
+#mainContent .trackListContainer h2, #mainContent .gridViewContainer h2, #mainContent .artistsContainer h2 {
   text-align: center;
   text-transform: uppercase;
 }
