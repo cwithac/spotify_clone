@@ -63,5 +63,5 @@ $artist = $album->getArtist();
 
 
 <?php
-// include('includes/footer.php'); 
+// include('includes/footer.php');
 ?>
