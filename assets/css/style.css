@@ -434,3 +434,12 @@ body {
   display: block;
   margin: 15px;
 }
+
+#mainContent .playlistContainer {
+  padding: 10px 0;
+}
+
+#mainContent .buttonItems .button {
+  display: block;
+  margin: 0 auto 20px auto;
+}
