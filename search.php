@@ -24,7 +24,6 @@ $('.searchInput').focus(); //Retains focus on search field, onfocus="this.value"
       timer = setTimeout(function() {
         var val = $('.searchInput').val();
         openPage('search.php?term=' + val);
-        console.log(val);
       }, 2000);
     })
   })

@@ -417,3 +417,15 @@ body {
 #mainContent .searchContainer input:focus {
   outline: none;
 }
+
+#mainContent .searchResultsRow {
+    padding: 15px 10px;
+}
+
+#mainContent .searchResultsRow span {
+    color: #FFFFFF;
+}
+
+#mainContent .searchResultsRow:hover {
+    background-color: #282828;
+}
