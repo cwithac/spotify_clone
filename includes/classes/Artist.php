@@ -21,5 +21,8 @@
 				}
 				return $array;
 		}
+		public function getId() {
+			return $this->id;
+		}
 	}
 ?>
