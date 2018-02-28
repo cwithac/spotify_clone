@@ -29,6 +29,14 @@ $('.searchInput').focus(); //Retains focus on search field, onfocus="this.value"
   })
 </script>
 
+<?php
+
+  if($term == '') {
+    exit();
+  }
+
+ ?>
+
 <div class="trackListContainer borderBottom">
   <h2>Songs</h2>
   <ul class="tracklist">
