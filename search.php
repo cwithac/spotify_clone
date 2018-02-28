@@ -18,7 +18,6 @@ if(isset($_GET['term'])) {
 <script type="text/javascript">
 $('.searchInput').focus(); //Retains focus on search field, onfocus="this.value" ... keeps cursor at end
   $(function(){
-    var timer;
     $('.searchInput').keyup(function() {
       clearTimeout(timer); //Waits until typing has stopped
       timer = setTimeout(function() {
