@@ -443,3 +443,8 @@ body {
   display: block;
   margin: 0 auto 20px auto;
 }
+
+#mainContent .playlistImage {
+  border: 3px solid #282828;
+  padding: 10px;
+}
