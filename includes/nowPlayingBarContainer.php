@@ -157,6 +157,7 @@ $jsonArray = json_encode($resultArray);
          $.post("includes/handlers/ajax/getAlbumJson.php", { albumId: track.album }, function(data) {
            var album = JSON.parse(data);
            $('.albumLink img').attr('src', album.artworkPath);
+           $('.albumLink img').attr('onclick', "openPage('album.php?id=" + album.id + "')");
          });
        audioElement.setTrack(track);
        if(play) {
