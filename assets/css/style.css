@@ -393,3 +393,27 @@ body {
 [role="link"] {
   cursor: pointer;
 }
+
+#mainContent .searchContainer {
+  background-color: #242424;
+  padding: 20px 28px;
+}
+
+#mainContent .searchContainer h4 {
+  margin: 0;
+  font-weight: 300px;
+}
+
+#mainContent .searchContainer input {
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  color: #FFFFFF;
+  font-weight: 700;
+  font-size: 62px;
+  letter-spacing: 2px;
+}
+
+#mainContent .searchContainer input:focus {
+  outline: none;
+}
