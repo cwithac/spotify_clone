@@ -8,7 +8,7 @@
    <div class="gridViewContainer">
      <h2>Playlists</h2>
      <div class="buttonItems">
-       <button class="button green">
+       <button class="button green" onclick="createPlaylist()">
          NEW PLAYLIST
        </button>
      </div>
