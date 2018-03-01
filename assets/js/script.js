@@ -37,6 +37,20 @@ function createPlaylist() {
 	}
 }
 
+function deletePlaylist(playlistId) {
+	var prompt = confirm('Are you sure you want to delete this playilst?');
+	if(prompt) {
+		$.post('includes/handlers/ajax/deletePlaylist.php', { playlistId: playlistId })
+			.done(function(error) {
+				if(error != '') {
+					alert(error);
+					return;
+				}
+				openPage('yourMusic.php');
+			})
+	}
+}
+
 function formatTime(seconds) {
 	var time = Math.round(seconds);
 	var minutes = Math.floor(time/60);
