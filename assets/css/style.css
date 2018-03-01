@@ -482,3 +482,7 @@ nav.optionsMenu select {
   -webkit-appearance: none;
   -moz-apppearance: none;
 }
+
+#mainContent .userInfo h1 {
+  text-align: center;
+}
