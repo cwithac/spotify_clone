@@ -5,9 +5,6 @@
   include('includes/classes/Album.php');
   include('includes/classes/Song.php');
 
-//TEMPORARY SESSION DEACTIVATE
-  // session_destroy();
-
 //Login Check
   if (isset($_SESSION['userLoggedIn'])) {
     $userLoggedIn = $_SESSION['userLoggedIn'];

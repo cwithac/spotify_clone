@@ -36,6 +36,13 @@ $(document).on("change", "select.playlist", function() {
 			select.val('');
 		});
 });
+
+function logout() {
+	$.post("includes/handlers/ajax/logout.php", function() {
+		location.reload();
+	});
+}
+
 //Manages SPA like reload of main content
 function openPage(url) {
 	if(timer != null) {
