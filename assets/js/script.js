@@ -9,6 +9,17 @@ var shuffle = false;
 var userLoggedIn;
 var timer;
 
+$(window).scroll(function() {
+	hideOptionsMenu();
+});
+
+$(document).click(function(click) {
+	var target = $(click.target);
+	if(!target.hasClass('item') && !target.hasClass('optionsButton')) {
+		hideOptionsMenu();
+	}
+});
+
 //Manages SPA like reload of main content
 function openPage(url) {
 	if(timer != null) {
@@ -60,6 +71,13 @@ function showOptionsMenu(button) {
 	var left = $(button).position().left;
 
 	menu.css({ 'top':top + 'px', 'left':left - menuWidth + 'px', 'display':'inline' });
+}
+
+function hideOptionsMenu() {
+		var menu = $('.optionsMenu');
+		if(menu.css('display') != 'none') {
+			menu.css('display', 'none');
+		}
 }
 
 function formatTime(seconds) {
