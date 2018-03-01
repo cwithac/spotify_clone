@@ -42,7 +42,7 @@ $owner = new User($con, $playlist->getOwner());
             <span class='artistName'>" . $songArtist->getName() . "</span>
           </div>
           <div class='trackOptions'>
-            <input type='hidden' class='songId' value='" . $albumSong->getId() . "'>
+            <input type='hidden' class='songId' value='" . $playlistSong->getId() . "'>
             <img class='optionsButton' src='assets/images/icons/more.png' onclick='showOptionsMenu(this)'>
           </div>
           <div class='trackDuration'>
