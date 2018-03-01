@@ -467,10 +467,18 @@ nav.optionsMenu .item {
   color: rgba(147,147,147, 0.8);
   cursor: pointer;
   height: 40px;
+  background-color: #282828;
+  font-size: 14px;
 }
 
 nav.optionsMenu .item:hover {
   color: #FFF;
   background-color: #333;
   border-color: #333;
+}
+
+nav.optionsMenu select {
+  border: none;
+  -webkit-appearance: none;
+  -moz-apppearance: none;
 }
