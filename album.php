@@ -1,5 +1,4 @@
 <?php
-// include('includes/header.php');
 include('includes/includedFiles.php');
 
 if(isset($_GET['id'])) {
@@ -66,7 +65,3 @@ $artist = $album->getArtist();
 	<input type="hidden" class="songId">
 	<?php echo Playlist::getPlaylistsDropdown($con, $userLoggedIn->getUsername()); ?>
 </nav>
-
-<?php
-// include('includes/footer.php');
-?>
